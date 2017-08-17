@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina5_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LoginRegistViewController">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="loginRegist_BG" translatesAutoresizingMaskIntoConstraints="NO" id="Yy1-WY-S7H">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ubb-4i-ORA">
+                    <rect key="frame" x="30" y="640.66666666666652" width="152" height="50.333333333333371"/>
+                    <color key="backgroundColor" red="0.97647058819999999" green="0.97647058819999999" blue="0.97647058819999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="ubb-4i-ORA" secondAttribute="height" multiplier="3:1" id="yL6-4z-cFg"/>
+                    </constraints>
+                    <state key="normal" title="登录">
+                        <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                    </state>
+                    <connections>
+                        <action selector="login:" destination="-1" eventType="touchUpInside" id="LVX-ip-H9r"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dLo-1d-BzX">
+                    <rect key="frame" x="232" y="640.66666666666652" width="152" height="50.333333333333371"/>
+                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="dLo-1d-BzX" secondAttribute="height" multiplier="3:1" id="tgj-Uw-Blu"/>
+                    </constraints>
+                    <state key="normal" title="注册">
+                        <color key="titleColor" red="0.97647058819999999" green="0.97647058819999999" blue="0.97647058819999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="regist:" destination="-1" eventType="touchUpInside" id="Chp-Lo-9GA"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="Yy1-WY-S7H" secondAttribute="bottom" id="HMq-MV-uGk"/>
+                <constraint firstItem="Yy1-WY-S7H" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="PAJ-nn-H9T"/>
+                <constraint firstAttribute="bottom" secondItem="ubb-4i-ORA" secondAttribute="bottom" constant="45" id="R3H-ar-NCL"/>
+                <constraint firstAttribute="bottom" secondItem="dLo-1d-BzX" secondAttribute="bottom" constant="45" id="Rmy-oR-vVc"/>
+                <constraint firstItem="dLo-1d-BzX" firstAttribute="baseline" secondItem="ubb-4i-ORA" secondAttribute="baseline" id="Xvc-q9-lqc"/>
+                <constraint firstItem="dLo-1d-BzX" firstAttribute="leading" secondItem="ubb-4i-ORA" secondAttribute="trailing" constant="50" id="ciD-cV-jUj"/>
+                <constraint firstItem="Yy1-WY-S7H" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="iQ2-q4-sR2"/>
+                <constraint firstItem="ubb-4i-ORA" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="30" id="oQn-2e-WJz"/>
+                <constraint firstAttribute="trailing" secondItem="dLo-1d-BzX" secondAttribute="trailing" constant="30" id="vwU-aL-L8B"/>
+                <constraint firstAttribute="trailing" secondItem="Yy1-WY-S7H" secondAttribute="trailing" id="zcK-7c-5fX"/>
+            </constraints>
+            <point key="canvasLocation" x="33.5" y="54.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="loginRegist_BG" width="320" height="568"/>
+    </resources>
+</document>

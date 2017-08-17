@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="PFA-RZ-u7r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--圈子-->
+        <scene sceneID="Val-3g-c3H">
+            <objects>
+                <viewController id="74b-sN-RDv" customClass="FriendsViewController" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="圈子" image="tabbar2_unselect" selectedImage="tabbar2_selected" id="ape-tw-dMw"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wym-pR-gQN" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-170" y="1997"/>
+        </scene>
+        <!--设备-->
+        <scene sceneID="EfS-Iw-x2C">
+            <objects>
+                <viewController id="BoX-oO-71T" customClass="DeviceViewController" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="设备" image="tabbar3_unselect" selectedImage="tabbar3_selected" id="toz-Fd-bca"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="29I-0W-OLD" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="534" y="1997"/>
+        </scene>
+        <!--我的-->
+        <scene sceneID="L7T-24-v7x">
+            <objects>
+                <viewController id="oD4-3u-GwW" customClass="MineViewController" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="我的" image="tabbar4_unselect" selectedImage="tabbar4_selected" id="yuj-F8-fhq"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="f9C-rd-vWD" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1239" y="1997"/>
+        </scene>
+        <!--首页-->
+        <scene sceneID="Rq4-Q1-57j">
+            <objects>
+                <viewController id="4p8-cx-obb" customClass="BaseHomeViewController" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="首页" image="tabbar1_unselect" selectedImage="tabbar1_selected" id="hEw-bB-6zf"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="i48-Al-Dou" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-948" y="1997"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="3u7-j2-kt1">
+            <objects>
+                <tabBarController id="PFA-RZ-u7r" sceneMemberID="viewController">
+                    <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="lightContent"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics" translucent="NO"/>
+                    <tabBar key="tabBar" opaque="NO" contentMode="scaleToFill" translucent="NO" id="8j1-t2-KQ5">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="tintColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="barTintColor" red="0.97647058823529409" green="0.97647058823529409" blue="0.97647058823529409" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="selectedImageTintColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="4p8-cx-obb" kind="relationship" relationship="viewControllers" id="GJD-4f-3T5"/>
+                        <segue destination="74b-sN-RDv" kind="relationship" relationship="viewControllers" id="ztI-Go-ZNd"/>
+                        <segue destination="BoX-oO-71T" kind="relationship" relationship="viewControllers" id="5nS-Jm-HAp"/>
+                        <segue destination="oD4-3u-GwW" kind="relationship" relationship="viewControllers" id="Dbn-sA-WvU"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Z7I-mn-Tgn" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-516" y="920"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="tabbar1_selected" width="30" height="30"/>
+        <image name="tabbar1_unselect" width="30" height="30"/>
+        <image name="tabbar2_selected" width="30" height="30"/>
+        <image name="tabbar2_unselect" width="30" height="30"/>
+        <image name="tabbar3_selected" width="30" height="30"/>
+        <image name="tabbar3_unselect" width="30" height="30"/>
+        <image name="tabbar4_selected" width="30" height="30"/>
+        <image name="tabbar4_unselect" width="30" height="30"/>
+    </resources>
+</document>
