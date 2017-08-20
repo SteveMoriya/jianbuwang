@@ -390,7 +390,7 @@
     }
     
     
-    NSString* urlString = [NSString stringWithFormat:@"http://jianbu.club/jbw/changeUserStep.htm?userToken=%@&deviceId=%@&walkNum=%ld&kcal=%f&distance=%.0f",beanResp.userToken,beanResp.deviceId,(long)runData.totalSteps,runData.calories,runData.distances];
+    NSString* urlString = [NSString stringWithFormat:@"http://jianbu.club/jbw/changeUserStep.htm?userToken=%@&deviceId=%@&walkNum=%ld&kcal=%f&distance=%.0f",beanResp.userToken,beanResp.deviceId,(long)runData.totalSteps,runData.calories,runData.distances/1000.0];
     
     
     AFHTTPSessionManager *manager = [AFHTTPSessionManager manager];

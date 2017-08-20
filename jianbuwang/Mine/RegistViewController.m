@@ -25,6 +25,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
+    
+    _appdelegate = (AppDelegate *)[UIApplication sharedApplication].delegate;
 }
 
 - (IBAction)getCodeAction:(id)sender {
@@ -39,6 +41,7 @@
     
     //添加检查网络方法
     NetworkStatus status = _appdelegate.reachability.currentReachabilityStatus;
+    
     if (status == NotReachable) {
         
         UIAlertView *alterView = [[UIAlertView alloc] initWithTitle:nil message:@"网络已断开，请检查网络！" delegate:nil cancelButtonTitle:@"知道了" otherButtonTitles:nil, nil];
