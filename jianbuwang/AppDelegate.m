@@ -25,7 +25,7 @@
 //    
 //    self.window.rootViewController = nav;
     
-    self.reachability = [Reachability reachabilityWithHostname:@"http://www.baidu.com"];
+    self.reachability = [Reachability reachabilityWithHostname:@"https://www.baidu.com"];
     
     return YES;
 }

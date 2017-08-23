@@ -42,6 +42,11 @@
 @property (weak, nonatomic) IBOutlet UILabel *AllTime;//总时长
 @property (weak, nonatomic) IBOutlet UILabel *AllProbability;//总万步率
 
+@property (weak, nonatomic) IBOutlet UILabel *userName;//用户名称
+@property (weak, nonatomic) IBOutlet UILabel *userSteps;//用户步数
+@property (weak, nonatomic) IBOutlet UILabel *userTime;//用户步数改变时间
+
+
 @property (nonatomic,strong) UTESmartBandClient *smartBandMgr;
 @property (nonatomic, strong)  AppDelegate             *appdelegate;
 
@@ -450,8 +455,13 @@
     self.homeCircleView.todaySteps = [self.todaySteps.text intValue];
     [self.homeCircleView changeInfo];
     
+}
+
+- (IBAction)updateInfoAction:(id)sender {
+    
     
 }
+
 
 - (UIStatusBarStyle)preferredStatusBarStyle {
     return UIStatusBarStyleLightContent;
